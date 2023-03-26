@@ -13,7 +13,6 @@
 	<body>
 		<script>
 			var date=new Date();
-			//Month
 			var m=date.getMonth();
 			if(m>1 && m<=4){
 				document.write("Current season is Spring");
@@ -29,23 +28,7 @@
 			}
 			document.write("<br><br>");
 			
-			//Month from user
-			var m=prompt("Enter month");
-			var month=m.toLowerCase();
-			if(month.indexOf("march")>=0 || month.indexOf("april")>=0 || month.indexOf("may")>=0){
-				document.write("Given month is Spring season");
-			}
-			else if(month.indexOf("june")>=0 || month.indexOf("jully")>=0 || month.indexOf("augest")>=0){
-				document.write("Given month is Summer season");
-			}
-			else if(month.indexOf("september")>=0 || month.indexOf("october")>=0 || month.indexOf("november")>=0){
-				document.write("Given month is Fall season");
-			}
-			else if(month.indexOf("december")>=0 || month.indexOf("january")>=0 || month.indexOf("feburary")>=0){
-				document.write("Given month is Winter season");
-			}
-			else{
-				document.write("Wrong input");
+			
 			}
 		</script>
 	</body>
